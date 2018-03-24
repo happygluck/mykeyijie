@@ -61,7 +61,7 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
 
     @Override
     public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
-        resources.resourceId("api")
+        resources.resourceId("api-order")
                 .tokenStore(tokenStore)
                 .authenticationEntryPoint(authenticationEntryPoint())
                 .accessDeniedHandler(accessDeniedHandler());
@@ -75,8 +75,6 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
                 .authorizeRequests()
                 .antMatchers("/favicon.ico").permitAll()
                 .antMatchers("/test/**").permitAll()
-                //.antMatchers("/sample").authenticated()
-                //.antMatchers("/sample/*").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .httpBasic();
