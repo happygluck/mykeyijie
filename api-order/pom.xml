@@ -8,10 +8,10 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>shike</artifactId>
+	<artifactId>api-order</artifactId>
 
-	<name>shike</name>
-	<description>食客系统</description>
+	<name>api-order</name>
+	<description>订单API</description>
 
 	<dependencies>
 		<dependency>
