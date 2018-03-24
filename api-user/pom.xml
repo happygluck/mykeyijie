@@ -8,10 +8,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>api-order</artifactId>
+    <artifactId>api-user</artifactId>
 
-    <name>api-order</name>
-    <description>订单API</description>
+    <name>api-user</name>
+    <description>用户API</description>
 
     <dependencies>
         <dependency>

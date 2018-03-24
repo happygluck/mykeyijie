@@ -8,6 +8,7 @@
 	<version>1.0.1</version>
 	<modules>
 		<module>common</module>
+		<module>api-user</module>
 		<module>api-order</module>
 		<module>oauth2</module>
 	</modules>
