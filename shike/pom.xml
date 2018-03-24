@@ -14,7 +14,20 @@
 	<description>食客系统</description>
 
 	<dependencies>
-
+		<dependency>
+			<groupId>com.keyijie</groupId>
+			<artifactId>common</artifactId>
+			<version>1.0.1</version>
+		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
