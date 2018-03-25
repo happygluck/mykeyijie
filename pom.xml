@@ -29,6 +29,8 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Edgware.SR2</spring-cloud.version>
+		<docker.repository>registry.ap-southeast-2.aliyuncs.com</docker.repository>
+		<docker.registry.name>liutao</docker.registry.name>
 	</properties>
 
 	<dependencies>
