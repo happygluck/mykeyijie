@@ -1,2 +1,20 @@
 server:
   port: 8080
+
+spring:
+  application:
+    name: api-gateway
+
+zuul:
+  routes:
+    user:
+      path: /user/**
+      url: http://localhost:9000
+    order:
+      path: /order/**
+      service-id: service-order
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
