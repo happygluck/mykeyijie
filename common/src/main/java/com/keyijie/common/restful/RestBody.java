@@ -10,6 +10,9 @@ public class RestBody<T> implements Serializable {
     private String message;
     private T data;
 
+    public RestBody() {
+    }
+
     public RestBody(int code) {
         this.code = code;
     }

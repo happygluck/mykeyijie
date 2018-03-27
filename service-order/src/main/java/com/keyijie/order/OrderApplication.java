@@ -3,14 +3,14 @@ package com.keyijie.order;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableEurekaClient
-@ComponentScan(basePackages = "com.keyijie")
+@EnableFeignClients
 public class OrderApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(OrderApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(OrderApplication.class, args);
+    }
 }

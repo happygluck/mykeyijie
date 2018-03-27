@@ -15,6 +15,9 @@ public class RestPageBody<T> implements Serializable {
     private int totalPages;
     private long totalElements;
 
+    public RestPageBody() {
+    }
+
     public RestPageBody(int code, String message, int pageNumber, int pageSize) {
         this.code = code;
         this.message = message;
