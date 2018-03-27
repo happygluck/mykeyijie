@@ -9,7 +9,7 @@ zuul:
   routes:
     user:
       path: /user/**
-      url: http://localhost:9000
+      service-id: service-user
     order:
       path: /order/**
       service-id: service-order
