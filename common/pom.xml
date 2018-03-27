@@ -14,4 +14,12 @@
     <name>common</name>
     <description>公用方法库</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
 </project>

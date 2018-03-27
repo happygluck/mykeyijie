@@ -1,4 +1,4 @@
-package com.keyijie.order.config;
+package com.keyijie.api.config;
 
 import com.keyijie.common.json.JsonConvert;
 import com.keyijie.common.restful.RestBody;

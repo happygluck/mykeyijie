@@ -17,6 +17,12 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
@@ -54,30 +60,6 @@
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>1.0.0</version>
-                <executions>
-                    <execution>
-                        <id>build-image</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>build</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>tag-image</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>tag</goal>
-                        </goals>
-                        <configuration>
-                            <image>
-                                ${docker.repository}/${docker.registry.name}/${project.artifactId}:${project.version}
-                            </image>
-                            <newName>
-                                ${docker.repository}/${docker.registry.name}/${project.artifactId}:${project.version}
-                            </newName>
-                        </configuration>
-                    </execution>
-                </executions>
                 <configuration>
                     <serverId>docker-aliyun</serverId>
                     <registryUrl>${docker.repository}</registryUrl>
